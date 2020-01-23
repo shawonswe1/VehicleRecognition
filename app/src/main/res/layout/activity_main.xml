@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFFCBE"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="80dp"
+        android:text="Take Vehicle Number Plate Photo"
+        android:textColor="#000"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/cameraButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="311dp"
+        android:background="@drawable/camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/galleryButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/gellary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/cameraButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="380dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="8dp"
+        android:background="#B7F0F1"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cameraButton" />
+
+    <EditText
+        android:id="@+id/editTextView"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="88dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="19dp"
+        android:background="#06A80E"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:textColor="#ffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
